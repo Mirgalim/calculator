@@ -72,18 +72,6 @@
       </goals>
     </execution>
     <execution>
-      <id>post-unit-test</id>
-      <phase>test</phase>
-      <goals>
-        <goal>report</goal>
-      </goals>
-      <configuration>
-        <dataFile>target/jacoco.exec</dataFile>
-        <outputDirectory>target/jacoco-ut</outputDirectory>
-      </configuration>
-    </execution>
-    <!-- ✅ Add this block to enforce coverage -->
-    <execution>
       <id>check</id>
       <goals>
         <goal>check</goal>
@@ -104,13 +92,7 @@
       </configuration>
     </execution>
   </executions>
-  <configuration>
-    <systemPropertyVariables>
-      <jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
-    </systemPropertyVariables>
-  </configuration>
 </plugin>
-
     </plugins>
   </build>
 </project>
