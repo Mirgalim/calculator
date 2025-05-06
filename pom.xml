@@ -83,7 +83,7 @@
               <limit>
                 <counter>LINE</counter>
                 <value>COVEREDRATIO</value>
-                <minimum>0.8</minimum> <!-- 80% coverage шалгана -->
+                <minimum>0.80</minimum> <!-- 80% coverage шалгана -->
               </limit>
             </limits>
           </rule>
